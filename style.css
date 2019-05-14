@@ -1,0 +1,272 @@
+/*CSS Reset*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes turner {
+  from{  transform: rotateY(0deg)   }
+  to  {  transform: rotateY(360deg) }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -2;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650;
+  color: white;
+  background: url(./Images/forest.jpg);
+  background-attachment: fixed;
+  width: 80%;
+  text-decoration: none;
+  margin: auto;
+}
+
+ /*Header*/
+.headerdiv {
+  height: 90%;
+  margin-bottom: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header {
+  background: rgba(50,50,50,0.9);
+  /*background: linear-gradient(#f26458, #FEAB90);*/
+  font-size: 16px;
+  width: 90%;
+  border: white 4px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+header ul {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-flow: wrap;
+}
+
+header li a {
+  display: flex;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  /*border-radius: 5px;*/
+  text-decoration: none;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+header li a:hover {
+  color: rgba(50,50,50,0.9);
+  background: white;
+}
+
+.maindiv {
+  margin-bottom: 0.5rem;
+  margin: auto;
+}
+
+.maindiv h2 {
+  font-size: 190%;
+  text-align: left;
+  padding: 0.2rem;
+  border: white 3px solid;
+  /*border-radius: 5px;*/
+  width: 60%;
+  margin: 0.3rem 0rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+.maindiv h4 {
+  font-size: 140%;
+  text-align: left;
+  padding: 0.2rem;
+  /*border: white 3px solid;
+  border-radius: 5px;*/
+  width: 60%;
+  margin: 0.3rem 0rem;
+  margin-top: 1rem;
+}
+
+.maindiv p {
+  text-align: left;
+  padding: 0.2rem;
+  margin: 0.5rem auto;
+}
+
+.maindiv .intro {
+  background: linear-gradient(rgba(200,200,200,0.2),rgba(200,200,200,0.6));
+  /*background: linear-gradient(#f26458, #FEAB90);*/
+  width: 80%;
+  border: white 5px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+  padding: 1rem;
+}
+.maindiv .backthen {
+  background: linear-gradient(rgba(200,200,200,0.2),rgba(200,200,200,0.6));
+  width: 80%;
+  border: white 5px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+  padding: 1rem;
+}
+
+.maindiv .backthen a{
+  color: white;
+  text-decoration: none;
+}
+
+.maindiv .backthen a:hover{
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.maindiv .nowwhat {
+  background: linear-gradient(rgba(200,200,200,0.2),rgba(200,200,200,0.6));
+  width: 80%;
+  border: white 5px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+  padding: 1rem;
+}
+
+.maindiv .nowwhat img {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.nowwhat .turner {
+  animation: turner 10s infinite linear;
+  z-index: -1;
+}
+
+.maindiv .playground {
+  background: linear-gradient(rgba(200,200,200,0.2),rgba(200,200,200,0.6));
+  width: 80%;
+  border: white 5px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+  padding: 1rem;
+}
+
+.maindiv .playground button {
+  display: block;
+  margin: 1rem auto;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  background: white;
+  border: white;
+  border-radius: 5px;
+  color: #858585;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+.maindiv .playground button:hover {
+
+} 
+
+.maindiv .playground #suprise {
+  margin: auto;
+}
+
+.maindiv .contact {
+  background: linear-gradient(rgba(200,200,200,0.2),rgba(200,200,200,0.6));
+  width: 80%;
+  border: white 5px solid;
+  /*border-radius: 5px;*/
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+  padding: 1rem;
+}
+
+.maindiv .icontactu label {
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.maindiv .icontactu  input {
+  padding: 0.3rem;
+  border: white 1px solid;
+  border-radius: 5px;
+  margin: 0.3rem 0rem;
+  color: #858585;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+.maindiv .icontactu .button {
+  padding: 0.3rem;
+  background: white;
+  border: white;
+  border-radius: 5px;
+  color: #858585;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+.maindiv .icontactu textarea, select {
+  background: white;
+  padding: 0.3rem;
+  border: white;
+  border-radius: 5px;
+  margin: 0.3rem 0rem;
+  color: #858585;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 5px 1px rgba(85,85,85,0.3);
+}
+
+.maindiv .icontactu textarea {
+  width: 50%;
+  overflow: auto;
+}
+
+
+.maindiv .ucontactme ul {
+  list-style-type: none;
+  padding: 0rem;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.maindiv .ucontactme li {
+  padding: 0.5rem;
+}
+
+.maindiv .ucontactme li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerdiv {
+  font-size: 14px;
+  text-align: center;
+  padding: 2%;
+}
